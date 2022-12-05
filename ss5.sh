@@ -259,9 +259,9 @@ menu() {
     echo -e "\t无法使用请联系zhuyuheng2022@gmail.com\n"
 
     echo -e "—————————————— 安装向导 ——————————————"
-    echo -e "${Green} 搭建 站群多IP ss5 L2TP PPTP http ss v2ray 联系QQ1853479098${Font}"
+    echo -e "${Green} 搭建 ss5 L2TP PPTP http ss v2ray 联系TG: @zhuyuheng${Font}"
 
-    echo -e "${Red} QQ1853479098  ${Font}"
+    echo -e "${Red} TG: @zhuyuheng 或者邮箱 ${Font}"
 
     echo -e "${Red} 出售美国香港多IP站群 服务器 ${Font}"
     echo -e "${Green}1.${Font}  安装ss5"
