@@ -30,8 +30,8 @@ checkOS(){
         OS_Version=$(cat /etc/os-release | grep REDHAT_SUPPORT_PRODUCT_VERSION | cut -f2 -d'"')
         if [[ "$OS_Version" -lt "8" ]];then
             echo -e "${Font_Red}此脚本不支持CentOS${OS_Version},请升级至CentOS8或更换其他操作系统${Font_Suffix}"
-            echo -e "${Font_Red}3秒后退出脚本...${Font_Suffix}"
-            sleep 3
+            echo -e "${Font_Red}5秒后退出脚本...${Font_Suffix}"
+            sleep 5
             exit 1
         fi
     fi        
@@ -54,7 +54,7 @@ CountRunTimes() {
     else
         count_file=$(mktemp --suffix=RRC)
     fi
-    RunTimes=$(curl -s --max-time 10 "https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Flmc999%2FTikTokCheck&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" >"${count_file}")
+    RunTimes=$(curl -s --max-time 10 "https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/TikTok365/tiktok&count_bg=#79C83D&title_bg=#555555&icon=&icon_color=#E7E7E7&title=hits&edge_flat=false" >"${count_file}")
     TodayRunTimes=$(cat "${count_file}" | tail -3 | head -n 1 | awk '{print $5}')
     TotalRunTimes=$(cat "${count_file}" | tail -3 | head -n 1 | awk '{print $7}')
 }
